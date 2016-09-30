@@ -24,12 +24,12 @@ module Jekyll
          site.pages.size > 0
       end
 
-      # Determine if pagination customization is enabled on the site.
+      # Determine if pagination by categories is enabled on the site.
       #
       # site - the Jekyll::Site object
       #
       # Returns true if pagination customization is enabled, false otherwise.
-      def self.pagination_customization_enabled?(site)
+      def self.paginate_categories_enabled?(site)
          Pager.pagination_enabled?(site) &&
         !site.config['paginate_categories'].nil?
       end

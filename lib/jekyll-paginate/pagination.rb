@@ -13,7 +13,7 @@ module Jekyll
       #
       # Returns nothing.
       def generate(site)
-        if Pager.pagination_customization_enabled?(site)
+        if Pager.paginate_categories_enabled?(site)
           site.config['paginate_paths'].each do | category, paginate_path |
             if template = self.class.template_page(site, paginate_path)
               paginate(site, template, category)
