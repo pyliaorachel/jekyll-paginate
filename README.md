@@ -3,15 +3,13 @@
 Customized pagination generator for Jekyll.
 Include features to paginate posts based on categories.
 
-[![Build Status](https://secure.travis-ci.org/jekyll/jekyll-paginate.svg?branch=master)](https://travis-ci.org/jekyll/jekyll-paginate)
-
 ## Installation
 
 As the original jekyll-paginate plugin is no longer maintained, I will not send a PR but instead host this plugin on this branch.
 
 Add this line to your application's Gemfile:
 
-    gem 'jekyll-paginate', :git => 'git://github.com/pyliaorachel/jekyll-paginate.git', :branch => 'paginate_categories'
+    gem 'jekyll-paginate', :git => 'git://github.com/pyliaorachel/jekyll-paginate.git'
 
 And then execute:
 
@@ -19,7 +17,7 @@ And then execute:
 
 Or install it yourself following the steps below:
 
-    $ git clone -b paginate_categories https://github.com/pyliaorachel/jekyll-paginate
+    $ git clone https://github.com/pyliaorachel/jekyll-paginate
     $ gem build jekyll-pagiinate.gemspec
     $ sudo gem install jekyll-paginate-1.1.0.gem
 
